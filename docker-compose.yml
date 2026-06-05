@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  fedor:
+    build: ./fedor
+    container_name: fedor_bot
+    restart: unless-stopped
+    env_file: ./fedor/.env
+
+  qa:
+    build: ./qa
+    container_name: qa_bot
+    restart: unless-stopped
+    env_file: ./qa/.env
+
+  zabava:
+    build: ./zabava
+    container_name: zabava_bot
+    restart: unless-stopped
+    env_file: ./zabava/.env

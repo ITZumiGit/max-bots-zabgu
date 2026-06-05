@@ -1,0 +1,4 @@
+aiohttp>=3.9
+beautifulsoup4>=4.12
+requests>=2.31
+python-dotenv>=1.0
